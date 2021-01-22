@@ -8,8 +8,8 @@ import json
 baseurl = 'https://live.cisco.com'
 user = 'demo'
 password = 'Cisco123'
-gmail_user = 'thddnas@gmail.com'
-gmail_password = 'ooe6YbW5SSHHEB'
+gmail_user = 'myemail@gmail.com'
+gmail_password = 'mypassword'
 
 #
 # Change the key above to issueId once defect CSCvw65555 is fixed in 2.1.2.6 or higher.
