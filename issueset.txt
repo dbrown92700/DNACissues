@@ -1,0 +1,29 @@
+AP Down
+Sensors - DHCP Failures
+Excessive time to get Authenticated - High deviation from baseline
+Excessive time to get an IP Address - High deviation from baseline
+Drop in total radio throughput
+Excessive failures to connect - High deviation from baseline
+Radio High Utilization (5GHz)
+Sensors - Speed Test Generic Error
+Device time has drifted from Cisco DNA Center
+Device time has drifted from Cisco DNA Center
+Sensors - Unreachable Host
+Sensors - IPSLA Test Fail
+Sensors - Web Socket Error
+Sensors - IPerf Test Network Error
+Sensors - Mail Server Unreachable
+AP Memory High Utilization
+Sensors - Failed Association during Onboarding
+Sensors - IPerf Server busy
+Sensors - Web Server Test Failed
+Sensors - Web Server Unreachable
+Sensors - FTP Test Fail
+Sensors - FTP Transfer Fail
+Sensors - FTP Unreachable
+Sensors - Mail Server Test Fail
+Sensors - Outlook Server Test Fail
+Sensors - Outlook Server Unreachable
+Sensors - Radius Authentication Fail
+Sensors - Failed Authentication during Onboarding
+AP Reboot Crash
