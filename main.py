@@ -4,12 +4,7 @@ from DNACsystem import getToken
 from DNACintent import getIssues
 from gmail import send_gmail
 import json
-
-baseurl = 'https://live.cisco.com'
-user = 'demo'
-password = 'Cisco123'
-gmail_user = 'myemail@gmail.com'
-gmail_password = 'mypassword'
+from includes import baseurl, user, password, gmail_user, gmail_password
 
 #
 # Change the key above to issueId once defect CSCvw65555 is fixed in 2.1.2.6 or higher.

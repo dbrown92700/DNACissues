@@ -1,0 +1,5 @@
+baseurl = 'https://dnac.cisco.com'
+user = 'DNACusername'
+password = 'DNACpassword'
+gmail_user = 'gmailaccount@gmail.com'
+gmail_password = 'gmailpassword'
