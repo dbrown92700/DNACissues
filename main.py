@@ -4,6 +4,7 @@ from DNACsystem import getToken
 from DNACintent import getIssues
 from gmail import send_gmail, send_email
 import json
+
 from includes import baseurl, dnac_user, dnac_password, from_user, from_password, recepient, mail_server, mail_port
 
 #
