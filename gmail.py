@@ -1,15 +1,17 @@
 #
-#
 # Gmail integration requires an account with "Less Secure App Access" enabled
 # in the security settings.  Consider using a dedicated gmail account for this
 # app.
-#
 #
 
 import smtplib
 import sys
 
 def send_email(local_user, local_password, to, subject, body, mail_server, mail_port):
+
+    # Defines function to send email using generic SMTP service
+    # local_password is currently not implemented and requires a server without authentication
+
     try:
         server = smtplib.SMTP(mail_server, mail_port)
         server.ehlo()
@@ -34,6 +36,9 @@ def send_email(local_user, local_password, to, subject, body, mail_server, mail_
 
 
 def send_gmail(gmail_user, gmail_password, to, subject, body):
+
+    # Defines function to send e-mail using gmail service.  Requires gmail account settings
+    # to allow "Less secure apps" or login will be rejected.
 
     try:
         server = smtplib.SMTP_SSL('smtp.gmail.com', 465)

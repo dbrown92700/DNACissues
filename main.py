@@ -5,7 +5,7 @@ from DNACintent import getIssues
 from gmail import send_gmail, send_email
 import json
 
-from includes import baseurl, dnac_user, dnac_password, from_user, from_password, recepient, mail_server, mail_port
+from includes import baseurl, dnac_user, dnac_password, from_user, from_password, recipient, mail_server, mail_port
 
 #
 # Change the key above to issueId once defect CSCvw65555 is fixed in 2.1.2.6 or higher.
@@ -55,6 +55,6 @@ if newissues == set({}):
 else:
     print('New Issues: ', newissues)
     if 'gmail.com' in from_user:
-        send_gmail(gmail_user, gmail_password, recepient, 'THD DNAC Alert', mail_body)
+        send_gmail(gmail_user, gmail_password, recipient, 'THD DNAC Alert', mail_body)
     else:
-        send_email(from_user, from_password, recepient, 'THD DNAC Alert', mail_body, mail_server, mail_port)
+        send_email(from_user, from_password, recipient, 'THD DNAC Alert', mail_body, mail_server, mail_port)
