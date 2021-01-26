@@ -53,4 +53,4 @@ if newissues == set({}):
     print('No new issues')
 else:
     print('New Issues: ', newissues)
-    send_gmail(gmail_user, gmail_password, [alert_destination], alert_title, mail_body)
+    send_gmail(gmail_user, gmail_password, alert_destination, alert_title, mail_body)
