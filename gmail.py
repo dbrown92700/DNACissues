@@ -9,6 +9,30 @@
 import smtplib
 import sys
 
+def send_email(local_user, local_password, to, subject, body, mail_server, mail_port):
+    try:
+        server = smtplib.SMTP(mail_server, mail_port)
+        server.ehlo()
+    except:
+        raise Exception('something went wrong with login')
+
+    if type(to) == list:
+        email_to = ', '.join(to)
+    else:
+        email_to = to
+
+    email_text = f'From: {local_user}\nTo: {email_to}\nSubject: {subject}\n\n{body}'
+    print(email_text)
+
+    try:
+        server.sendmail(local_user, to, email_text)
+        print('Email sent.')
+    except:
+        raise Exception('something went wrong with email send')
+
+    server.close()
+
+
 def send_gmail(gmail_user, gmail_password, to, subject, body):
 
     try:
