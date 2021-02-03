@@ -3,7 +3,7 @@
 Reads global issues and sends an e-mail with any net new issues since the last run.
 
 - Set DNAC host and credentials in includes.py.
-- Needs a gmail account to send alerts.
+- Needs a gmail account to send alerts or access to an SNMP server that allows sendmail.
 - Gmail account has to have the "Less secure app access" setting enabled for this to work.  Recommend a dedicated account to avoid using low security on your account.
 - Set gmail credentials in includes.py
 - Execute python3 main.py
